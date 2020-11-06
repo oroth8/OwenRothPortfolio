@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,400,600,700,800');
+@import url('normalize.css');
+
+
+/* ========================================================================== */
+/* ========================================================================== */
+							/* [Table of contents] */
+/* ========================================================================== */
+/* ========================================================================== */
+
+/*	
+
+    1. RESET.	
+    2. TYPOGRAPHY.
+    3. BUTTOMS.
+    4. SPACE AND ALIGMENT.
+    5. THEMPLATE SECTIONS.
+    6. TEMPLATE PAGES.
+    7. LOADER.
+    8. SCROLLING TOP.
+    9. COUNTER.
+    10. POPUP GALLERY.
+    11. FILTER GALLERY.
+    12. TESTIMONIALS.
+    13. MEDIA QUERIES.
+		
+*/ 
+
+/* =====================================
+   	1. RESET.
+   ===================================== */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+/* ===================================== 
+	2. TYPOGRAPHY. 
+   ===================================== */
+h1, h2, h3, h4, h5, h6, p, ul,ol{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #323B3C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, .h1 {
+  font-size: 1.602rem;
+  font-weight: 600;
+}
+
+h2, .h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #e6a100;
+}
+
+h3, .h3 {
+  font-size: 1.2rem;
+  color: #455354;
+  text-rendering: auto;
+}
+
+h4, .h4 {
+  font-size: 1.125rem;
+  color: #457B9D;
+}
+
+h5, .h5 {
+  font-size: 1rem;
+  color: #457B9D;
+}
+
+p {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  font-weight: 400;
+  line-height: 2;
+}
+
+a {
+	color: #3E755F;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+a:hover {
+	color: #e6a100;
+    text-decoration: none;
+}
+
+/*###########################################
+  ---------- 4. SPACE AND ALIGMENT. ----------
+  ###########################################*/
+.wrapper{
+    min-height: auto;   
+}
+
+.main-navbar{
+    width: 230px;
+    height: 100%;
+    background-color: #222222;
+    position: fixed;
+    float: left;
+}
+
+.logo-brand{
+  width: 200px;
+  margin: 100px 0px 30px 0px;
+}
+
+.logo-brand img{
+  width: 100%;
+}
+
+.current{
+    margin-top: 60px;  
+}
+
+.content{
+    width: 100%;
+    float: right;
+    padding: 50px 50px 0px 300px;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.content p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.content strong{
+    font-weight: 600;
+}
+
+.content li{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.navbar-fixed-left {
+  width: 230px;
+  position:fixed;
+  border-radius: 0;
+  height: 100%;
+  background-color: #222222;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 230px; 
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 230px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -50px;
+  margin-left: 250px;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  list-style: none;
+  top: 50px;
+  
+}
+#nav li {
+  margin-bottom: 6px;
+  border-bottom: 1px solid #595959;
+}
+#nav a {
+  color: #FFF;
+  display: block;
+  font-size: 14px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+    font-weight: 400;
+}
+#nav a:hover {
+  color: #e6a100;
+}
+#nav .current a {
+  color: #FFF
+}
+
+.brand{
+    height: 120px;
+}
+
+
+
+/* ==========================================================================
+   #MEDIA QUERIES - RESPONSIVE
+   ========================================================================== */
+@media (max-width: 991px) {
+.content p{
+    width: 100%;
+}
+    
+.content{
+        padding-right: 0px;
+    }
+}
+    
