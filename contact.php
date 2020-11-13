@@ -1,8 +1,8 @@
 <?php
 
 // Email configuration
-$from = 'Email received from <info@yourdomain.com>';
-$sendTo = 'Email sent to <info@yourdomain.com>';
+$from = 'Email received from <portfolio@owen-roth.com>';
+$sendTo = 'Email sent to <portfolio@owen-roth.com>';
 $subject = 'You have received a new email';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = 'Your message has been sent successfully!';
